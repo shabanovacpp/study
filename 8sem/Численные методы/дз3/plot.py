@@ -9,7 +9,8 @@ def graphic(x_function, y_function, x_points, y_points, xlim, ylim, n_point, nam
         plt.rcParams['grid.color'] = '#777777'         
         plt.rcParams['grid.linestyle'] = '--'         
         plt.rcParams['grid.linewidth'] = 0.5            
-        plt.rcParams['grid.alpha'] = 0.8                
+        plt.rcParams['grid.alpha'] = 0.8
+        plt.rcParams['font.size'] = 16                 
         plt.rcParams['xtick.color'] = '#aaaaaa'     
         plt.rcParams['ytick.color'] = '#aaaaaa'         
         plt.rcParams['axes.labelcolor'] = '#aaaaaa'    
@@ -53,4 +54,4 @@ def graphic(x_function, y_function, x_points, y_points, xlim, ylim, n_point, nam
             plt.plot([x_points[i+1]]*2, [0,function(type, x_points[i+1])], '--', c=('#aaaaaa' if color == 'black' else "#666666FF"), linewidth=2)
             plt.scatter(x_points[i+1], function(type, x_points[i+1]), c="#664263", s=20, alpha=0.8, zorder=3)
     if xaxis:
-        plt.plot(x_function, [0]*len(x_function), c=('#aaaaaa' if color == 'black' else "#666666FF"), linewidth=1,zorder=-1)
+        plt.plot(x_function, [0]*len(x_function), c=('#aaaaaa' if color == 'black' else "#995C91FF"), linewidth=1,zorder=-1)
